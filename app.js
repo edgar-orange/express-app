@@ -2,10 +2,10 @@ const express = require('express')
 const superagent = require("superagent");
 const app = express()
 const port = 3000
-const x = {
-    book: "test",
-    year: 129
-};
+const chalk = require('chalk')
+
+// const debug = require('debug')('app')
+//change console.log to debug 
 
 app.get('/', async ({ query: { id } }, res) => {
     try {
